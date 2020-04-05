@@ -24,6 +24,8 @@
 
 [菜鸟教程runoob.com](https://www.runoob.com/)
 
+[简单教程](https://www.twle.cn)
+
 [简书](https://www.jianshu.com/)
 
 
@@ -33,7 +35,7 @@
 
 [网易科技频道](https://tech.163.com)
 
-
+[鸠摩搜索](https://www.jiumodiary.com)
 
 ### 学习文章
 
