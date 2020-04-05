@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+### 资源链接频道
 
-You can use the [editor on GitHub](https://github.com/fly-cutter/fly-cutter.github.com/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+*学无止境，网罗天下知识！*
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+---
 
-### Markdown
+#### 产品经理类
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[知乎](https://www.zhihu.com/)
 
-```markdown
-Syntax highlighted code block
+[人人都是产品经理](http://www.woshipm.com/)
 
-# Header 1
-## Header 2
-### Header 3
+[36氪](http://www.woshipm.com/)
 
-- Bulleted
-- List
+[果壳网](https://www.guokr.com/)
 
-1. Numbered
-2. List
+[鸟哥笔记](http://www.niaogebiji.com)
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### IT技能类
 
-### Jekyll Themes
+[CSDN](https://blog.csdn.net/)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/fly-cutter/fly-cutter.github.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+[菜鸟教程runoob.com](https://www.runoob.com/)
 
-### Support or Contact
+[简书](https://www.jianshu.com/)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+#### 综合知识
+
+[360图书馆](http://www.360doc.com/index.html)
+
+[网易科技频道](https://tech.163.com)
+
+
+
+### 学习文章
+
+[Markdown学习入门](0001.Markdown学习入门.md)
+
