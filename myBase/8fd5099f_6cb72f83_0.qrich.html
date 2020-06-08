@@ -1,0 +1,90 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<meta name="qrichtext" content="1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+p, li { white-space: pre-wrap; }
+</style>
+</head>
+<body style="font-family:'微软雅黑 Light'; font-size:14pt; font-weight:400; font-style:normal;">
+<p style="margin:0px;"><span style="font-family:'华文宋体'; font-weight:600;">四、网络技术</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体'; font-weight:600;"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体'; font-weight:600;">TCP/IP协议栈</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">1.应用层：为应用程序提供数据传输的网络接口，HTTP、Telnet、FTP；</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">2.传输层：端到端的连接，TCP、UDP；</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">3.网络层：寻址，IP；</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">4.数据链路层：数字信号转化成电信号或光信号，网卡；</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">5.物理层：传输物理通道，网线。</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体'; font-weight:600;">互联网上一切皆下载</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体'; font-weight:600;">私有地址及NAT</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体'; font-weight:600;">1.私有IP地址段：</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">A类（10.0.0.0-10.255.255.255）、</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">B类（172.16.0.0-172.31.255.255）、</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">C类（192.168.0.0-192.168.255.255）； </span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体'; font-weight:600;">2.NAT（Network Address Translation，网络地址转换）技术</span><span style="font-family:'华文宋体';">：</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">静态转换（Static NAT，一一对应）；</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">动态转换（Dynamic NAT，ISP使用）；</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">端口多路复用（OverLoad，路由器，端口作为映射维度NATTABLE）。</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体'; font-weight:600;">TCP与UDP：</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">TCP（Transmission Control Protocol）传输控制协议，UDP（User Datagram Protocol）用户数据包协议，IP（Internet Protocol）因特网互联协议。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">TCP三次握手建立，四次握手释放，私有通道，可靠：顺序编号、确认机制、超时重传。一个TCP数据包大小1KB左右。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">UDP不可靠：实际接收率接近100%，接收方维护数据包顺序处理算法很关键。</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体'; font-weight:600;">反向代理：</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">代理：客户端向外界发起请求时，不直接与目标服务器连接，而是将所有请求交给代理服务器，由它负责连接外界的目标服务器。保护客户端。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">反向代理：针对服务器的代理技术，将服务期隐藏在身后。反向代理服务器接受客户端请求，分发到被代理的服务器上。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">价值：负载均衡、缓存数据和静态资源、封装解封请求（SSL）、阻挡攻坚。</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体'; font-weight:600;">CDN：</span><span style="font-family:'华文宋体';">Content Delivery Network，内容分发网络。内容指静态的资源，分发是就近接入、快速访问。基于互联网的数量巨大的服务器集群，专注于内容和资源分发，为用户提供快速访问资源的能力，进而提升内容访问体验。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">解耦：应用服务器只负责逻辑能力，资源服务器存放内容、资源。</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体'; font-weight:600;">断点续传：</span><span style="font-family:'华文宋体';">HTTP Header中请求头Range表示要求服务器返回的数据范围，响应头Content-Range表示本次服务器返回的数据范围。--切分片段，多线程下载。</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体'; font-weight:600;">推送服务的核心：</span><span style="font-family:'华文宋体';">长连接是基于TCP/IP；Push功能基于长连接的全双工通信能力。衡量push服务器的关键指标：并发连接数和带宽。客户端利用最低频率的心跳保证长连接的存活时长。</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">代理服务器：省流加速模式，通过代理服务器拿到数据，压缩。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">Socket：封装了TCP/IP的一套API，长连接，计算机之间及进程间通讯。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">VPN（Virtual Private Network）虚拟专用网络。隧道：公共网络上虚拟出来的专用通道，避免窃听。PPTP、L2PT、IPSec隧道协议，有得加密能力强、有的穿透能力强。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">VPN服务器：两块网卡分别对应外网和内网地址。</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体'; font-weight:600;">HTTPS：（1）利用非对称加密传递客户端产生的随机密钥：客户端请求HTTPS连接给服务器，服务器返回公钥，客户端利用公钥加密随机密钥给到服务器，服务器利用私钥解密出随机密钥，（2）利用随机密钥进行对称加密传输数据。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">非对称加密：公开密钥（public key）和私有密钥（private key）。用公开密钥对数据进行加密，只有用对应的私有密钥才能解密；用私有密钥对数据进行加密，那么只有用对应的公开密钥才能解密。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">对称加密：加密和解密使用同一个密钥。加密计算量小、速度块，适合对大量数据进行加密的场景。</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体'; font-weight:600;">五、网络安全与后端技术</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">密码存储：彩虹表（提前计算好的字符串与常用散列值一一对应的数据映射表）、加盐（存储密码原文+Salt构成的字符串MD5密文）</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">被盗可能：太常见、太简单（暴力穷举）、拖库、撞库</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">WEB安全：<br />SQL注入攻击：开发者没有对用户提交内容审核，导致恶意SQL语句被执行。万能密码“guoguo'--”。永远不要相信外界输入的数据，对任何外界输入的数据都要做合法性的校验。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">XSS（Cross Site Script）跨站脚本攻击：攻击者在正常网页中注入恶意脚本，用户访问时窃取用户Cookie或导航到恶意网站。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">DOM-Based XSS（基于DOM的XSS）、Stored XSS（存储型XSS）用户提交数据如评论存储进数据库，输出页面时执行恶意脚本。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">CSRF（Cross Site Request Forgery）跨站请求伪造：区分当前请求的来源网站。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">ARP（Address Resolution Protocol，地址解析协议）欺骗：获取局域网中IP对应MAC地址。危害：制造网络中断，中间人攻击</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">DDoS（Distributed Denial of Service）分布式拒绝服务，对服务器发送大量无用的请求耗尽服务器资源（CPU、内存等）。租赁流量或种植肉鸡构建僵尸网络。SYN Flood攻击，客户端不发送第三次握手ACK报文，半连接。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">RPC框架（Remote Procedure Call，远程过程调用）：允许一台计算机调用另一台计算机上的程序得到结果，而代码中不需要做额外的编程，就像在本地调用一样。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">RESTful API：Representational State Transfer的缩写，&quot;表现层状态转化&quot;；如果一个架构符合REST原则，就称它为RESTful架构。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">一个 RESTful API 包含以下三方面：</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">基本的 URI(统一资源定位符)，如https://api.github.com/users</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">标准的 HTTP 方法，如 GET，POST，PUT(整体替换)，PATCH(部分更新)，DELETE</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">传输的数据媒体类型，如 JSON，XML</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">Session（会话）：HTTP是无状态的连接，Session可以弥补，客户端Cookie机制辅助。</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">流量控制：漏桶算法，输出恒定；令牌桶算法，流量在一定范围波动。</span></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';">唯一ID：数据库；UUID：32个十六进制数字，长度很长，重复概率近乎0；雪花算法：twitter公司发明64bit，其中41bit时间戳+10bit工作机器ID+12bit序列号。</span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="margin:0px;"><span style="font-family:'华文宋体';"> </span></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+<p style="-qt-paragraph-type:empty; margin:0px; font-family:'华文宋体';"><br /></p>
+
+<script type="text/javascript" language="javascript" src="jquery.js"></script>
+<script type="text/javascript" language="javascript" src="itemlink.js"></script></body>
+</html>
